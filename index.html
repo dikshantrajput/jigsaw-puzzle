@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <header>
+                <a href="#" class="brand">
+                    Jigsaw Puzzle
+                </a>
+    
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://dikshantrajput.github.io/portfolio/" target="_dk">Portfolio</a>
+                        </li>
+                        <li>    
+                            <a href="https://www.linkedin.com/in/dikshant-rajput-072228193/" target="_dk">Linkedin</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main__container">
+                <div class="success__modal hide">
+                    <div class="success__modal__body">
+                        <h1>Congratulations</h1>
+                        <p>You have successfully solved this level of puzzle</p>
+                        <button class="success__btn">
+                            Next Level
+                        </button>
+                    </div>
+                </div>
+                <div class="final__success__modal hide">
+                    <div class="success__modal__body">
+                        <h1>Congratulations</h1>
+                        <p>You have successfully solved all the levels of the puzzle</p>
+                        <button class="restart__btn">
+                            Restart Game
+                        </button>
+                    </div>
+                </div>
+                <div class="level__selector__container">
+                    <h1 class="heading">
+                        Jigsaw Puzzle
+                    </h1>
+                    <!-- level selector -->
+                    <!-- <select name="" class="level__selector">
+                        <option value="">Select Level</option>
+                        <option value="2" selected>Level 1</option>
+                        <option value="3">Level 2</option>
+                        <option value="9">Level 3</option>
+                    </select> -->
+                </div>
+
+                <p class="error" id="error"></p>
+                
+                <p class="image__title">
+                    Please select a image to start
+                </p>
+                <form action="" id="inputForm" enctype="multipart/form-data">
+                    <input type="file" name="image" title="Select a image" accept="image/*">
+                </form>
+            
+                <p class="success" id="success"></p>
+            
+                <section class="jigsaw__image__container">
+                    <div class="group">
+                        <div class="jigsaw__left__container">
+                            <!-- scattered parts -->
+                        </div>
+    
+                        <div class="jigsaw__right__container">
+                        </div>
+                    </div>
+
+                    <div class="jigsaw__control__container">
+                        <button class="jigsaw__start__button">
+                            Start
+                        </button>
+                    </div>
+                </section>
+
+            </main>
+            
+        </div>
+
+        <footer>
+            &copy; Created with <span class="heart">&hearts;</span>  by Dikshant Rajput
+        </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
